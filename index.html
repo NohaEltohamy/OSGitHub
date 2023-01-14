@@ -1,18 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link ref="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello to Git Course</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus culpa sed temporibus. Illum ea quae ipsa tempore natus ab placeat dicta expedita nobis eaque! Asperiores natus adipisci quisquam similique veritatis.</p>
-    <form>
-        <label>Name:</label>
-        <input type="text" />
-    </form>
-</body>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div>
+            <img id="topPage" style="float:right;border:1px solid black" src="./imgs/ITI_logo.png" width="250px" height="70">
+        </div>  
+        <div>
+            <ul class="n">
+                <li><a href="#">Home</a></li>
+                <li><a href="./docs/roadMap.html">Road Map</a></li>
+                <li><a href="./docs/register.html">Registration Form</a></li>
+                <li><a href="HTTPS://WWW.ITI.GOV.EG">Contact</a></li>
+         </ul>
+        </div>
+        <a href="./docs/roadMap.html">
+            <img src="./imgs/img1.jpg" width="100%" height="79%" > 
+
+        </a>
+        <div id="msg"></div>
+        <hr>
+        <center>
+            <font color="19456b">
+                <p><b>Copyright 2021 by Noha Salah &reg;. All Rights Reserved.</b></p>
+            </font>
+        </center>
+        <script>
+            var div =document.getElementById('msg');
+            if(location.protocol=='https:'){
+                    div.innerHTML='<h1>You are using HTTPS :)</h1>';
+            }else{
+                div.innerHTML='<h1>You are using a non secure protocol HTTP :(</h1>';
+            }
+        </script>
+    </body>
 </html>
