@@ -9,7 +9,8 @@ font-size: 40px;
 }
 h1{
     color:yellow;
-    border:1px green solid
+
+   border:1px green solid;
     display:inline;
     font-size: 40px;    
     }
